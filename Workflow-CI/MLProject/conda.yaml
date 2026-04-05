@@ -1,0 +1,11 @@
+name: stroke-risk-ci-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pandas=2.3.3
+  - scikit-learn=1.7.2
+  - pip
+  - pip:
+    - mlflow=3.10.1
