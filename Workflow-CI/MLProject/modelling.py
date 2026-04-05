@@ -30,8 +30,12 @@ def run_ci_modelling():
     if os.path.exists("saved_model"):
         shutil.rmtree("saved_model")
 
-    # 4. Simpan artefak secara lokal (Wajib untuk Kriteria 3 - Skilled & Advance)
-    mlflow.sklearn.save_model(model, "saved_model")
+    # 4. Simpan artefak secara lokal dengan fix versi Starlette
+    mlflow.sklearn.save_model(
+        model, 
+        "saved_model",
+        extra_pip_requirements=["starlette<1.0.0"]  # <--- TAMBAHKAN BARIS INI
+    )
     print("Artefak model berhasil disimpan di folder 'saved_model'!")
 
 if __name__ == "__main__":
