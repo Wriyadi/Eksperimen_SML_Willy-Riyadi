@@ -2,4 +2,7 @@ Tautan Repositori GitHub:
 https://github.com/Wriyadi/Eksperimen_SML_Willy-Riyadi
 
 Tautan Docker Hub :
-https://hub.docker.com/repositories/wriyadi/Eksperimen_SML_Willy-Riyadi/general
+https://hub.docker.com/repository/docker/wriyadi/stroke-risk-model
+
+Tautan Dagshub :
+https://dagshub.com/wriyadi5/Eksperimen_SML_Willy-Riyadi
